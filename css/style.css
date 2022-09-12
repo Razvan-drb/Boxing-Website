@@ -1,0 +1,414 @@
+/* fonts */
+
+@font-face {
+    font-family: 'liberation_sansbold';
+    src: url('../fonts/liberationsans-bold-webfont-webfont.woff2') format('woff2'),
+        url('../fonts/liberationsans-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sansregular';
+    src: url('../fonts/liberationsans-regular-webfont-webfont.woff2') format('woff2'),
+        url('../fonts/liberationsans-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'liberation_sansregular'; */
+
+/* end of fonts */
+
+
+
+/* general style */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+}
+
+img {
+    max-width: 100%;
+    /* toutes les images ont la largeur max egale a celle de leur parents */
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+
+}
+
+main {
+    background-color: #F3F3F3;
+}
+
+/* style for header ************ */
+header {
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+}
+
+header img {
+    padding-top: 10px;
+    padding-left: 15%;
+}
+
+header #navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 30px;
+
+}
+
+header #navigation p {
+    display: none;
+}
+
+header #navigation nav a {
+    font-family: 'liberation_sansregular';
+    text-decoration: none;
+    padding: 5px;
+    color: #212121;
+
+}
+
+header #navigation nav a:hover {
+    text-decoration: none;
+    padding: 10px;
+    color: #EA9F06;
+    transition: 500ms;
+}
+
+header h1 {
+    font-family: 'liberation_sansregular';
+    padding-left: 25px;
+    font-size: 1.3em;
+    color: #212121;
+}
+
+header p {
+    font-family: 'liberation_sansregular';
+    font-size: 1.5em;
+    padding-right: 15%;
+    color: #212121;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* end of style for header *********************** */
+
+
+/* reduction tag ************ */
+article div {
+    position: relative;
+    margin: 0;
+}
+
+.reduction {
+    position: absolute;
+    top: 2%;
+    right: -4%;
+    background-color: #292929;
+    color: #EA9F06;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* text and price style ******************* */
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border: none;
+}
+
+.text h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 150%;
+    left: 8%;
+    margin: 0;
+    font-size: 1em;
+}
+
+.prix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.prix a {
+    margin: 0;
+    font-size: 15px;
+    color: #F3F3F3;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: #363636;
+    padding: 5px 35px
+}
+
+.prix a:hover {
+    font-size: 15px;
+    color: #EA9F06;
+    transition: 500ms;
+    border: 1px solid #9A9A9A;
+    text-decoration: none;
+    background-color: #9A9A9A;
+    padding: 5px 35px
+}
+
+.line {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.1em;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.truePrice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #EA9F06;
+}
+
+/* end of price and text ************** */
+
+/* nav footer ********************** */
+footer {
+    position: relative;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #D1D1D1;
+    border-radius: 50%;
+}
+
+footer .navigationFooter {
+    position: absolute;
+    bottom: 95%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+
+}
+
+
+footer .navigationFooter a {
+
+    text-decoration: none;
+    padding: 10px;
+    color: #212121;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .navigationFooter a:hover {
+
+    text-decoration: none;
+    padding: 10px;
+    color: #EA9F06;
+    transition: 500ms;
+    text-align: center;
+    padding: 15px;
+}
+
+/* end of nav footer ***************** */
+
+
+/* footer style ********************** */
+footer {
+    background-color: #373737;
+}
+
+footer p {
+    text-align: center;
+    color: #F3F3F3;
+}
+
+
+hr {
+    color: #F3F3F3;
+}
+
+.social {
+    text-align: center;
+}
+
+.social img {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.copy {
+    padding-bottom: 20px;
+}
+.col-3 img {
+    padding-top: 50px;
+}
+
+/* end of footer style ************************ */
+
+
+
+/* rows and columns ******************** */
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-1 {
+    width: 8.333333%;
+    padding: 25px;
+}
+
+.col-2 {
+    width: 16.6666%;
+    padding: 25px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 25px;
+    text-align: center;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 25px;
+}
+
+.col-5 {
+    width: 41.6666666%;
+    padding: 25px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 30px 50px 50px 65px;
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 25px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 25px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 25px;
+}
+
+.col-10 {
+    width: 83.333333%;
+    padding: 25px;
+}
+
+.col-11 {
+    width: 91.666666%;
+    padding: 25px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 25px;
+}
+
+/* ******************!!!!!!!!!* MEDIA QUERIES **!!!!!!!*******TELEPHONE****************** */
+
+@media screen and (max-width: 576px) {
+
+    header #navigation {
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+
+    }
+
+    header #navigation p {
+        display: inline-block;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+    }
+
+    header p {
+        display: none;
+    }
+
+    /* footer nav ********** */
+    footer {
+        position: relative;
+    }
+
+
+    footer .navigationFooter {
+        position: absolute;
+       /*  margin: 10px; */
+        margin-left: 40px;
+        bottom: 95%;
+        left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        width: fit-content;
+    }
+    /* .container img {
+        margin-top: 30px;
+    } */
+    
+
+
+
+    /* main    ********** */
+    .container {
+        width: 85%;
+        text-align: center;
+    }
+
+    /*  redifinition des colonnes !!!!!!!!!!!!!!!!!!!!!! */
+
+    .col-3 {
+        width: 50%;
+        padding-top: 50px;
+    }
+
+    .col-6 {
+        width: 100%
+    }
+
+
+}
+
+/* enf of MEDIA Q TELEPHONE ********************* */
